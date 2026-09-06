@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,10 +38,21 @@
         }
 
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             font-size: 25px;
             font-weight: bold;
             color: #ffffff;
         }
+
+    
+        .logo img {
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        border-radius: 50%;
+       }
 
         nav a {
             color: #ffffff;
@@ -191,14 +203,19 @@
     <header>
 
         <div class="logo">
-            Talent Bridge
+            <img src="talent bridge.png"
+                 alt="Talent Bridge Logo"
+                 class="logo-img">
+
+            <span>Talent Bridge</span>
         </div>
 
         <nav>
             <a href="index.html">Home</a>
+            <a href="features.html">Features</a>
             <a href="jobs.html">Jobs</a>
-            <a href="class.html">Classes</a>
-            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="class.html">Class</a>
         </nav>
 
     </header>
@@ -299,7 +316,6 @@
 
     <footer>
 
-
         <p>
             © 2026 Talent Bridge | Connect Skills with Opportunities
         </p>
@@ -308,3 +324,4 @@
 
 </body>
 </html>
+
