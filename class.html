@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Talent Bridge - Classes</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* ================= BODY ================= */
+
+        body {
+            background-color: #0b0e17;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ================= HEADER ================= */
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1f2937;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* ================= MAIN ================= */
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+            text-align: center;
+            flex: 1;
+        }
+
+        .container h1 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .container > p {
+            color: #9ca3af;
+            margin-bottom: 30px;
+        }
+
+        /* ================= CARDS ================= */
+
+        .class-box {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .card {
+            background: #111827;
+            width: 250px;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #1f2937;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            border-color: #243b6b;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #9ca3af;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #243b6b;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #3b5ca8;
+        }
+
+        /* ================= BACK TO HOME ================= */
+
+        .back-home {
+            display: inline-block;
+            margin-top: 35px;
+            padding: 12px 25px;
+            background: #243b6b;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .back-home:hover {
+            background: #3b5ca8;
+            transform: translateY(-3px);
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            border-top: 1px solid #1f2937;
+        }
+
+        .footer-links {
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #ffd166;
+        }
+
+        footer p {
+            color: #9ca3af;
+            margin: 0;
+            font-size: 14px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            Talent Bridge
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="class.html">Classes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= CLASSES SECTION ================= -->
+
+    <div class="container">
+
+        <h1>Explore Career Classes</h1>
+
+        <p>
+            Learn new skills and build your career with Talent Bridge.
+        </p>
+
+        <div class="class-box">
+
+            <!-- Web Development -->
+
+            <div class="card">
+
+                <div class="icon">💻</div>
+
+                <h2>Web Development</h2>
+
+                <p>
+                    Learn HTML, CSS, JavaScript and create modern websites.
+                </p>
+
+                <a href="#" class="btn">Explore</a>
+
+            </div>
+
+
+            <!-- Data Science -->
+
+            <div class="card">
+
+                <div class="icon">📊</div>
+
+                <h2>Data Science</h2>
+
+                <p>
+                    Learn Python, Pandas and data analysis for your career.
+                </p>
+
+                <a href="#" class="btn">Explore</a>
+
+            </div>
+
+
+            <!-- UI/UX Design -->
+
+            <div class="card">
+
+                <div class="icon">🎨</div>
+
+                <h2>UI/UX Design</h2>
+
+                <p>
+                    Improve your creativity and learn modern interface design.
+                </p>
+
+                <a href="#" class="btn">Explore</a>
+
+            </div>
+
+
+            <!-- App Development -->
+
+            <div class="card">
+
+                <div class="icon">📱</div>
+
+                <h2>App Development</h2>
+
+                <p>
+                    Learn how to design and develop useful mobile applications.
+                </p>
+
+                <a href="#" class="btn">Explore</a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= BACK TO HOME ================= -->
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+
+        <p>
+            © 2026 Talent Bridge | Connect Skills with Opportunities
+        </p>
+
+    </footer>
+
+</body>
+</html>
